@@ -160,7 +160,7 @@ class BooleanParser:
 
         # evaluate
         x1 = evaluate(x1)
-        if x2 == None:
+        if not isinstance(x2, list) and x2 is None:
             result = x1
 
         else:
